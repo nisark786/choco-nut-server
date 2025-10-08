@@ -13,7 +13,7 @@ const middlewares = jsonServer.defaults();
 
 server.use(cors());       
 server.use(middlewares);
-server.use("/api", router);
+server.use(router);
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
